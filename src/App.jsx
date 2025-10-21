@@ -5,7 +5,7 @@ import PlantDetails from "./pages/PlantDetails";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import PrivateRoute from "./routes/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute";
 
 export default function App() {
   return (
