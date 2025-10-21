@@ -7,8 +7,8 @@
     "rating": 4.8,
     "availableStock": 10,
     "careLevel": "Easy",
-    "description": "A hardy plant that purifies indoor air and thrives in low light.",
-    "image": "https://i.postimg.cc/d3yLSp1k/snake-plant.png",
+    "description": "A hardy plant that purifies indoor air and thrives in low light. Perfect for beginners and busy people.",
+    "image": "https://i.postimg.cc/SKDNdtzr/snake-plant.png",
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -17,10 +17,58 @@
     "category": "Flowering",
     "price": 25,
     "rating": 4.7,
-    "availableStock": 8,
+    "availableStock": 12,
     "careLevel": "Medium",
-    "description": "Beautiful white blooms with natural air-cleaning ability.",
-    "image": "https://i.postimg.cc/DZ2H0VQn/peace-lily.png",
-    "providerName": "GreenHouse Decor"
+    "description": "Known for its white flowers and air-purifying qualities. Loves shade and consistent moisture.",
+    "image": "https://i.postimg.cc/XJtSHdWn/peace-lily.png",
+    "providerName": "Leafy Haven"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Spider Plant",
+    "category": "Hanging",
+    "price": 15,
+    "rating": 4.9,
+    "availableStock": 8,
+    "careLevel": "Easy",
+    "description": "One of the most adaptable indoor plants, great for hanging pots and improving indoor air quality.",
+    "image": "https://i.postimg.cc/9F3vmZ8b/spider-plant.png",
+    "providerName": "Bloom & Grow Co."
+  },
+  {
+    "plantId": 4,
+    "plantName": "Areca Palm",
+    "category": "Decorative",
+    "price": 32,
+    "rating": 4.6,
+    "availableStock": 6,
+    "careLevel": "Medium",
+    "description": "A lush, tropical plant that adds elegance to your living room or office space. Prefers bright indirect light.",
+    "image": "https://i.postimg.cc/L8hvLyXG/areca-palm.png",
+    "providerName": "Evergreen Planet"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Aloe Vera",
+    "category": "Medicinal",
+    "price": 20,
+    "rating": 4.9,
+    "availableStock": 9,
+    "careLevel": "Easy",
+    "description": "A healing succulent that requires minimal watering and bright light. Great for both decor and skincare.",
+    "image": "https://i.postimg.cc/SsyjmJ7m/aloe-vera.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 6,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 22,
+    "rating": 4.8,
+    "availableStock": 15,
+    "careLevel": "Very Easy",
+    "description": "Thrives in low-light conditions and requires little water. A perfect low-maintenance indoor plant.",
+    "image": "https://i.postimg.cc/rs2L3fgD/zz-plant.png",
+    "providerName": "Nature's Touch"
   }
 ]
