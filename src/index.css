@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global custom styles */
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f6f9f6;
+  @apply bg-bg text-gray-800;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  @apply bg-white shadow-md flex justify-between items-center px-6 py-4;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-primary text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all;
 }
