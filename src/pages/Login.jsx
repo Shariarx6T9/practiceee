@@ -1,0 +1,92 @@
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthProvider";
+import { toast } from "react-toastify";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
+
+export default function Login() {
+  const { signInUser, googleLogin, resetPassword } = useContext(AuthContext);
+  const [showPass, setShowPass] = useState(false);
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    signInUser(email, password)
+      .then(() => {
+        toast.success("Login Successful 🌿");
+        navigate(from, { replace: true });
+      })
+      .catch((err) => toast.error(err.message));
+  };
+
+  const handleGoogle = () => {
+    googleLogin()
+      .then(() => {
+        toast.success("Logged in with Google!");
+        navigate(from, { replace: true });
+      })
+      .catch((err) => toast.error(err.message));
+  };
+
+  const handleReset = () => {
+    if (!email) return toast.info("Enter your email first!");
+    resetPassword(email)
+      .then(() => toast.success("Password reset email sent!"))
+      .catch((err) => toast.error(err.message));
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-green-50">
+      <div className="card w-96 bg-base-100 shadow-xl p-6">
+        <h2 className="text-2xl font-semibold text-center mb-4 text-green-600">Login</h2>
+        <form onSubmit={handleLogin} className="space-y-3">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="input input-bordered w-full"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <div className="relative">
+            <input
+              type={showPass ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              className="input input-bordered w-full"
+              required
+            />
+            <span
+              className="absolute right-3 top-3 cursor-pointer text-gray-500"
+              onClick={() => setShowPass(!showPass)}
+            >
+              {showPass ? <FaEyeSlash /> : <FaEye />}
+            </span>
+          </div>
+          <p onClick={handleReset} className="text-sm text-green-600 cursor-pointer">
+            Forgot password?
+          </p>
+          <button className="btn btn-success text-white w-full">Login</button>
+        </form>
+        <div className="divider">OR</div>
+        <button onClick={handleGoogle} className="btn btn-outline w-full">
+          <FaGoogle /> Login with Google
+        </button>
+        <p className="text-center mt-3 text-sm">
+          Don’t have an account?{" "}
+          <Link to="/register" className="text-green-600 font-semibold">
+            Register
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+}
