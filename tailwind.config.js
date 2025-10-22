@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        greenPrimary: "#16a34a",       // main green
-        greenLight: "#bbf7d0",         // light green backgrounds
-        greenDark: "#14532d",          // dark green accents
-        greenMuted: "#ecfdf5",         // soft green background
+        greenPrimary: "#16a34a", // Main green
+        greenLight: "#bbf7d0",   // Light green for backgrounds
+        greenDark: "#14532d",    // Deep green accents
+        greenMuted: "#ecfdf5",   // Very soft green base
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui"],
@@ -32,17 +32,18 @@ module.exports = {
     themes: [
       {
         greennest: {
-          "primary": "#16a34a",
-          "secondary": "#bbf7d0",
-          "accent": "#14532d",
-          "neutral": "#f3f4f6",
-          "base-100": "#ffffff",
-          "info": "#3b82f6",
-          "success": "#16a34a",
-          "warning": "#facc15",
-          "error": "#dc2626",
+          primary: "#16a34a",
+          secondary: "#bbf7d0",
+          accent: "#14532d",
+          neutral: "#f3f4f6",
+          "base-100": "#ffffff", // ✅ ensures white backgrounds (fixes black login box)
+          info: "#3b82f6",
+          success: "#16a34a",
+          warning: "#facc15",
+          error: "#dc2626",
         },
       },
     ],
+    darkTheme: "light", // ✅ force light mode always
   },
 };

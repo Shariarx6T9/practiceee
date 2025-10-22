@@ -10,12 +10,13 @@ import PrivateRoute from "./components/PrivateRoute";
 import ErrorPage from "./pages/ErrorPage";
 import Loading from "./components/Loading";
 import SuccessPage from "./components/SuccessPage";
+import ExplorePlants from "./pages/ExplorePlants";
 import { useState, useEffect } from "react";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
 
-  // Simple fake loading animation for a smooth entry
+  // Simulated loading effect for a smooth intro
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1200);
     return () => clearTimeout(timer);
@@ -26,11 +27,31 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-50 via-pink-50 to-purple-100 text-gray-800">
+    // ✅ Use custom DaisyUI theme (white, green)
+    <div
+      data-theme="greennest"
+      className="min-h-screen flex flex-col bg-gradient-to-br from-greenMuted via-greenLight to-greenMuted text-gray-800"
+    >
       <Navbar />
       <div className="flex-grow">
         <Routes>
+          {/* Home Page */}
           <Route path="/" element={<Home />} />
+
+          {/* Explore Plants Page (Public) */}
+          <Route path="/explore" element={<ExplorePlants />} />
+
+          {/* Plants Page (Protected) */}
+          <Route
+            path="/plants"
+            element={
+              <PrivateRoute>
+                <ExplorePlants />
+              </PrivateRoute>
+            }
+          />
+
+          {/* Plant Details Page (Protected) */}
           <Route
             path="/plants/:id"
             element={
@@ -39,6 +60,8 @@ export default function App() {
               </PrivateRoute>
             }
           />
+
+          {/* Profile Page (Protected) */}
           <Route
             path="/profile"
             element={
@@ -47,16 +70,18 @@ export default function App() {
               </PrivateRoute>
             }
           />
+
+          {/* Auth Pages */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          {/* Optional success route (for redirects after actions) */}
+          {/* Optional success page for after actions */}
           <Route
             path="/success"
             element={<SuccessPage message="Your action was successful!" />}
           />
 
-          {/* 404 Catch-all route */}
+          {/* 404 fallback */}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>

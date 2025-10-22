@@ -1,20 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import errorImg from "../assets/Error 404.png"; // ✅ Correct import
 
 const ErrorPage = () => {
   const navigate = useNavigate();
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-50 to-purple-100 text-center px-6">
-      <motion.h1
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
+      
+      {/* Error Image replacing 404 text */}
+      <motion.img
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-[120px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600"
-      >
-        404
-      </motion.h1>
+        src={errorImg}
+        alt="Error illustration"
+        className="w-72 mb-6"
+      />
 
       <motion.h2
         initial={{ y: 30, opacity: 0 }}
@@ -42,15 +45,6 @@ const ErrorPage = () => {
       >
         ⬅ Back to Home
       </motion.button>
-
-      <motion.img
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 1 }}
-        src="https://illustrations.popsy.co/gray/404-error.svg"
-        alt="Error illustration"
-        className="w-72 mt-10"
-      />
     </div>
   );
 };
