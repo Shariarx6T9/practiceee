@@ -6,8 +6,8 @@ export default function ExplorePlants() {
 
   useEffect(() => {
     fetch("/plants.json")
-      .then(res => res.json())
-      .then(data => setPlants(data))
+      .then((res) => res.json())
+      .then((data) => setPlants(data))
       .catch(() => console.error("Failed to load plants.json"));
   }, []);
 

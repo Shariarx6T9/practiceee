@@ -14,7 +14,6 @@ export default function Register() {
     const form = e.target;
     const name = form.name.value;
     const email = form.email.value;
-    const photo = form.photo.value;
     const password = form.password.value;
 
     // Password validation
@@ -27,7 +26,7 @@ export default function Register() {
 
     createUser(email, password)
       .then(() => {
-        updateUser(name, photo)
+        updateUser(name)
           .then(() => {
             toast.success("Registration successful! 🌿");
             navigate("/");
@@ -49,13 +48,26 @@ export default function Register() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-green-50">
       <div className="card w-96 bg-base-100 shadow-xl p-6">
-        <h2 className="text-2xl font-semibold text-center mb-4 text-green-600">
-          Register
+        {/* Top heading to indicate registration page */}
+        <h2 className="text-2xl font-semibold text-center mb-6 text-green-700">
+          Create Your Account
         </h2>
+
         <form onSubmit={handleRegister} className="space-y-3">
-          <input type="text" name="name" placeholder="Full Name" className="input input-bordered w-full" required />
-          <input type="email" name="email" placeholder="Email" className="input input-bordered w-full" required />
-          <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            className="input input-bordered w-full"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="input input-bordered w-full"
+            required
+          />
           <div className="relative">
             <input
               type={showPass ? "text" : "password"}
@@ -71,12 +83,26 @@ export default function Register() {
               {showPass ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
-          <button className="btn btn-success text-white w-full">Register</button>
         </form>
-        <div className="divider">OR</div>
-        <button onClick={handleGoogle} className="btn btn-outline w-full">
-          <FaGoogle /> Continue with Google
+
+        {/* Google login button */}
+        <div className="mt-3">
+          <button
+            onClick={handleGoogle}
+            className="btn btn-outline w-full flex items-center justify-center gap-2"
+          >
+            <FaGoogle /> Continue with Google
+          </button>
+        </div>
+
+        {/* Main register button moved below */}
+        <button
+          onClick={(e) => handleRegister(e)}
+          className="btn bg-green-600 text-white w-full mt-3"
+        >
+          Register
         </button>
+
         <p className="text-center mt-3 text-sm">
           Already have an account?{" "}
           <Link to="/login" className="text-green-600 font-semibold">

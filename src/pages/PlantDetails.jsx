@@ -12,7 +12,8 @@ export default function PlantDetails() {
       .then(data => {
         const found = data.find(p => p.plantId == id);
         setPlant(found);
-      });
+      })
+      .catch(() => toast.error("❌ Failed to load plant details"));
   }, [id]);
 
   const handleSubmit = (e) => {
@@ -21,7 +22,8 @@ export default function PlantDetails() {
     e.target.reset();
   };
 
-  if (!plant) return <p className="text-center mt-10">Loading plant details...</p>;
+  if (!plant)
+    return <p className="text-center mt-10 text-gray-500">Loading plant details...</p>;
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
@@ -32,7 +34,7 @@ export default function PlantDetails() {
           className="w-full md:w-1/2 rounded-xl object-cover"
         />
         <div>
-          <h1 className="text-3xl font-bold text-primary mb-2">
+          <h1 className="text-3xl font-bold text-green-700 mb-2">
             {plant.plantName}
           </h1>
           <p className="text-gray-700 mb-4">{plant.description}</p>
@@ -48,7 +50,7 @@ export default function PlantDetails() {
 
       {/* Consultation Form */}
       <div className="mt-12 bg-green-50 p-6 rounded-2xl shadow-inner">
-        <h2 className="text-2xl font-bold text-primary mb-4">
+        <h2 className="text-2xl font-bold text-green-700 mb-4">
           🌱 Book a Consultation
         </h2>
         <form onSubmit={handleSubmit} className="grid gap-4 max-w-md">
@@ -66,7 +68,10 @@ export default function PlantDetails() {
             className="border border-gray-300 rounded-lg px-4 py-2"
             required
           />
-          <button type="submit" className="btn-primary w-full">
+          <button
+            type="submit"
+            className="bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition w-full"
+          >
             Book Now
           </button>
         </form>
