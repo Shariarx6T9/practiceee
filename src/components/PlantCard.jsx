@@ -1,23 +1,24 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const PlantCard = ({ plant }) => {
-  const { plantId, plantName, price, rating, image } = plant;
-
+export default function PlantCard({ plant }) {
+  const navigate = useNavigate();
   return (
-    <div className="bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
-      <img
-        src={image}
-        alt={plantName}
-        className="w-full h-52 object-cover rounded-lg mb-3"
-      />
-      <h3 className="text-xl font-semibold text-primary">{plantName}</h3>
-      <p className="text-gray-600">💰 ${price}</p>
-      <p className="text-yellow-500">⭐ {rating}</p>
-      <Link to={`/plants/${plantId}`}>
-        <button className="mt-3 btn-primary w-full">View Details</button>
-      </Link>
+    <div className="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden border border-green-100 transition duration-200">
+      <img src={plant.image} alt={plant.plantName} className="h-44 w-full object-cover" />
+      <div className="p-4 space-y-2">
+        <h3 className="font-semibold text-lg">{plant.plantName}</h3>
+        <p className="text-sm text-gray-500">{plant.category}</p>
+        <div className="flex justify-between text-sm mt-2">
+          <span className="font-semibold text-greendark">৳{plant.price}</span>
+          <span className="text-yellow-500">{plant.rating} ★</span>
+        </div>
+        <button
+          onClick={() => navigate(`/plants/${plant.plantId}`)}
+          className="w-full mt-3 bg-greendark text-white py-2 rounded-md hover:bg-green-800"
+        >
+          View Details
+        </button>
+      </div>
     </div>
   );
-};
-
-export default PlantCard;
+}

@@ -19,39 +19,46 @@ export default function Profile() {
   };
 
   return (
-    <div className="max-w-lg mx-auto py-12 text-center">
-      <h2 className="text-3xl font-bold mb-6 text-green-700">My Profile</h2>
-      <img
-        src={user?.photoURL || "https://i.ibb.co/2sYZf9M/user.png"}
-        alt="User"
-        className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-300"
-      />
-      <h3 className="text-xl font-semibold">{user?.displayName}</h3>
-      <p className="text-gray-500">{user?.email}</p>
+    <div className="min-h-screen bg-green-50 flex items-center justify-center">
+      <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center border border-green-100">
+        <h2 className="text-3xl font-bold mb-6 text-green-700">My Profile</h2>
+        <img
+          src={user?.photoURL || "https://i.ibb.co/2sYZf9M/user.png"}
+          alt="User"
+          className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-300 object-cover"
+        />
+        <h3 className="text-xl font-semibold">{user?.displayName}</h3>
+        <p className="text-gray-500 mb-4">{user?.email}</p>
 
-      {!editing ? (
-        <button onClick={() => setEditing(true)} className="btn btn-success text-white mt-4">
-          Update Profile
-        </button>
-      ) : (
-        <form onSubmit={handleUpdate} className="mt-6 space-y-3">
-          <input
-            type="text"
-            name="name"
-            defaultValue={user?.displayName}
-            placeholder="New Name"
-            className="input input-bordered w-full"
-          />
-          <input
-            type="text"
-            name="photo"
-            defaultValue={user?.photoURL}
-            placeholder="New Photo URL"
-            className="input input-bordered w-full"
-          />
-          <button className="btn btn-success text-white w-full">Save Changes</button>
-        </form>
-      )}
+        {!editing ? (
+          <button
+            onClick={() => setEditing(true)}
+            className="btn bg-green-600 text-white hover:bg-green-700 w-full"
+          >
+            Update Profile
+          </button>
+        ) : (
+          <form onSubmit={handleUpdate} className="mt-6 space-y-3">
+            <input
+              type="text"
+              name="name"
+              defaultValue={user?.displayName}
+              placeholder="New Name"
+              className="input input-bordered w-full focus:ring-2 focus:ring-green-400"
+            />
+            <input
+              type="text"
+              name="photo"
+              defaultValue={user?.photoURL}
+              placeholder="New Photo URL"
+              className="input input-bordered w-full focus:ring-2 focus:ring-green-400"
+            />
+            <button className="btn bg-green-600 text-white w-full hover:bg-green-700">
+              Save Changes
+            </button>
+          </form>
+        )}
+      </div>
     </div>
   );
 }

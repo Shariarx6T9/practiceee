@@ -10,7 +10,6 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
-
   const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (e) => {
@@ -18,7 +17,6 @@ export default function Login() {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-
     signInUser(email, password)
       .then(() => {
         toast.success("Login Successful 🌿");
@@ -44,15 +42,17 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-green-50">
-      <div className="card w-96 bg-base-100 shadow-xl p-6">
-        <h2 className="text-2xl font-semibold text-center mb-4 text-green-600">Login</h2>
-        <form onSubmit={handleLogin} className="space-y-3">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-green-100 to-green-50">
+      <div className="bg-white shadow-xl rounded-2xl p-8 w-96 border border-green-100">
+        <h2 className="text-3xl font-semibold text-center text-green-700 mb-6">
+          Welcome Back 🌿
+        </h2>
+        <form onSubmit={handleLogin} className="space-y-4">
           <input
             type="email"
             name="email"
             placeholder="Email"
-            className="input input-bordered w-full"
+            className="input input-bordered w-full focus:ring-2 focus:ring-green-400"
             onChange={(e) => setEmail(e.target.value)}
             required
           />
@@ -61,7 +61,7 @@ export default function Login() {
               type={showPass ? "text" : "password"}
               name="password"
               placeholder="Password"
-              className="input input-bordered w-full"
+              className="input input-bordered w-full focus:ring-2 focus:ring-green-400"
               required
             />
             <span
@@ -71,18 +71,29 @@ export default function Login() {
               {showPass ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
-          <p onClick={handleReset} className="text-sm text-green-600 cursor-pointer">
+          <p
+            onClick={handleReset}
+            className="text-sm text-green-600 cursor-pointer hover:underline"
+          >
             Forgot password?
           </p>
-          <button className="btn btn-success text-white w-full">Login</button>
+          <button className="btn bg-green-600 text-white w-full hover:bg-green-700">
+            Login
+          </button>
         </form>
-        <div className="divider">OR</div>
-        <button onClick={handleGoogle} className="btn btn-outline w-full">
+
+        <div className="divider my-5 text-gray-400">OR</div>
+
+        <button
+          onClick={handleGoogle}
+          className="btn btn-outline w-full flex justify-center items-center gap-2 border-green-500 text-green-700 hover:bg-green-50"
+        >
           <FaGoogle /> Login with Google
         </button>
-        <p className="text-center mt-3 text-sm">
+
+        <p className="text-center mt-4 text-sm text-gray-600">
           Don’t have an account?{" "}
-          <Link to="/register" className="text-green-600 font-semibold">
+          <Link to="/register" className="text-green-700 font-semibold hover:underline">
             Register
           </Link>
         </p>
