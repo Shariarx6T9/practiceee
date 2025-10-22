@@ -1,7 +1,7 @@
 🌿 GreenNest
 GreenNest is a modern, responsive web application for an indoor plant nursery. Users can browse a catalog of beautiful indoor plants, view detailed care instructions, and manage their user profile. The site features a clean, green-themed UI built with Tailwind CSS and DaisyUI, and it uses Firebase for user authentication.
 
-Live Site URL: greennestindorestore.surge.sh
+Live Site URL: https://greennestindorestore.surge.sh
 
 Features
 Based on the project files, the site includes the following features:
