@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+body {
+  @apply font-sans text-gray-800 bg-greenMuted;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @apply font-heading text-greenDark;
+}
+
+a {
+  @apply transition duration-300 ease-in-out;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+/* Card shadow & hover */
+.card {
+  @apply bg-white rounded-xl shadow-card transition-shadow hover:shadow-cardHover;
+}
+
+/* Inputs */
+input, textarea, select {
+  @apply border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-greenPrimary focus:border-greenPrimary;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-greenPrimary text-white hover:bg-greenDark;
+}
+
+.btn-secondary {
+  @apply bg-greenLight text-greenDark hover:bg-greenPrimary hover:text-white;
+}
+
+/* Swiper custom */
+.swiper-button-next, .swiper-button-prev {
+  @apply text-greenPrimary;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-greenPrimary;
+}
+
+/* Footer links */
+footer a {
+  @apply text-white hover:text-greenLight transition-colors;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-greenPrimary rounded-full;
+}
+::-webkit-scrollbar-track {
+  @apply bg-greenMuted;
+}
+
+/* Improved Text Visibility Styles */
+
+/* Main title green tone (matches your theme) */
+.text-greenMain {
+  color: #16a34a;
+}
+
+/* Light accent (for tagline) */
+.text-lightAccent {
+  color: #f1f5f9; /* light grayish-white for calm tone */
+}
+
+/* Strong outline: black + subtle white glow */
+.text-outline-strong {
+  text-shadow:
+    2px 2px 3px #000,
+   -2px -2px 3px #000,
+    0 0 5px #fff;
+}
+
+/* Softer outline for secondary tagline */
+.text-outline-soft {
+  text-shadow:
+    1px 1px 2px #000,
+   -1px -1px 2px #000,
+    0 0 3px #fff;
+}
