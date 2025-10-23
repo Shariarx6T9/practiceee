@@ -6,6 +6,7 @@ export default function Profile() {
   const { user, updateUser } = useContext(AuthContext);
   const [editing, setEditing] = useState(false);
 
+<<<<<<< HEAD
   const handleUpdate = async (e) => {
     e.preventDefault();
     const name = e.target.name.value.trim();
@@ -18,20 +19,39 @@ export default function Profile() {
     } catch (err) {
       toast.error(err.message);
     }
+=======
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
+    updateUser(name, photo)
+      .then(() => {
+        toast.success("Profile updated successfully 🌿");
+        setEditing(false);
+      })
+      .catch((err) => toast.error(err.message));
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
   };
 
   return (
     <div className="min-h-screen bg-green-50 flex items-center justify-center">
       <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center border border-green-100">
         <h2 className="text-3xl font-bold mb-6 text-green-700">My Profile</h2>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
         <img
           src={user?.photoURL || "https://i.ibb.co/2sYZf9M/user.png"}
           alt="User"
           className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-300 object-cover"
         />
+<<<<<<< HEAD
 
         <h3 className="text-xl font-semibold">{user?.displayName || "No Name"}</h3>
+=======
+        <h3 className="text-xl font-semibold">{user?.displayName}</h3>
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
         <p className="text-gray-500 mb-4">{user?.email}</p>
 
         {!editing ? (
@@ -60,6 +80,7 @@ export default function Profile() {
             <button className="btn bg-green-600 text-white w-full hover:bg-green-700">
               Save Changes
             </button>
+<<<<<<< HEAD
             <button
               type="button"
               onClick={() => setEditing(false)}
@@ -67,6 +88,8 @@ export default function Profile() {
             >
               Cancel
             </button>
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           </form>
         )}
       </div>

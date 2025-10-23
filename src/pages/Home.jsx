@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -7,6 +8,12 @@ import ExpertsSection from "../components/ExpertsSection";
 import PlantOfTheWeek from "../components/PlantOfTheWeek";
 import DecorIdeas from "../components/DecorIdeas";
 import Hero from "../components/Hero";
+=======
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import PlantCard from "../components/PlantCard";
+import { useEffect, useState } from "react";
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -21,6 +28,7 @@ export default function Home() {
   const topPlants = plants.slice(0, 4);
 
   return (
+<<<<<<< HEAD
     <div className="max-w-6xl mx-auto px-4">
 
       <Hero />
@@ -28,6 +36,46 @@ export default function Home() {
       {/* Top Rated Plants */}
       <section className="mt-16">
         <h2 className="text-2xl font-bold text-green-700 text-center mb-6">
+=======
+    <div className="max-w-6xl mx-auto">
+      {/* Hero Section */}
+      <section className="my-6">
+        <Swiper
+          loop
+          spaceBetween={40}
+          slidesPerView={1}
+          className="rounded-2xl overflow-hidden shadow"
+        >
+          {/* Slide 1 */}
+          <SwiperSlide>
+            <div className="relative h-80 bg-[url('/src/assets/banner.png')] bg-cover bg-center flex flex-col justify-center px-6">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-greenMain text-outline-strong">
+                Bring Nature Home 🌱
+              </h1>
+              <p className="mt-3 text-lg font-semibold text-lightAccent text-outline-soft">
+                Fresh air. Calm mind. Greener life.
+              </p>
+            </div>
+          </SwiperSlide>
+
+          {/* Slide 2 */}
+          <SwiperSlide>
+            <div className="relative h-80 bg-[url('/src/assets/banner1.png')] bg-cover bg-center flex flex-col justify-center px-6">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-greenMain text-outline-strong">
+                Care. Grow. Bloom.
+              </h1>
+              <p className="mt-3 text-lg font-semibold text-lightAccent text-outline-soft">
+                Discover easy indoor plant care guides.
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
+
+      {/* Top Rated Section */}
+      <section className="mt-10">
+        <h2 className="text-2xl font-bold text-greendark text-center mb-6">
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           🌼 Top Rated Indoor Plants
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -38,13 +86,18 @@ export default function Home() {
         <div className="text-center mt-6">
           <Link
             to="/plants"
+<<<<<<< HEAD
             className="text-green-700 border border-green-700 px-6 py-2 rounded-md hover:bg-green-700 hover:text-white duration-200"
+=======
+            className="text-greendark border border-blackdark px-6 py-2 rounded-md hover:bg-greendark hover:text-white duration-200"
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           >
             Explore All Plants
           </Link>
         </div>
       </section>
 
+<<<<<<< HEAD
       <TipsSection />
 
       <ExpertsSection />
@@ -52,6 +105,28 @@ export default function Home() {
      <PlantOfTheWeek />
 
       <DecorIdeas />
+=======
+      {/* Plant Tips */}
+      <section className="my-16 bg-white p-8 rounded-xl shadow-sm">
+        <h3 className="text-xl font-semibold text-greendark mb-4 text-center">
+          🌱 Quick Plant Care Tips
+        </h3>
+        <div className="grid md:grid-cols-3 gap-6 text-center">
+          <div>
+            <h4 className="font-bold mb-2 text-lg">💧 Watering</h4>
+            <p>Water when topsoil feels dry. Avoid overwatering!</p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-2 text-lg">☀️ Light</h4>
+            <p>Most indoor plants thrive in bright, indirect sunlight.</p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-2 text-lg">🌿 Fertilizer</h4>
+            <p>Feed monthly with mild fertilizer during growing season.</p>
+          </div>
+        </div>
+      </section>
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     </div>
   );
 }

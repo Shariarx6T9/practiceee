@@ -17,7 +17,10 @@ export default function Login() {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     signInUser(email, password)
       .then(() => {
         toast.success("Login Successful 🌿");
@@ -43,28 +46,47 @@ export default function Login() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-green-100 to-green-50 px-4">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md border border-green-100">
         <h2 className="text-3xl font-semibold text-center text-green-700 mb-6">
           Welcome Back 🌿
         </h2>
 
+=======
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-green-100 to-green-50">
+      <div className="bg-white shadow-xl rounded-2xl p-8 w-96 border border-green-100">
+        <h2 className="text-3xl font-semibold text-center text-green-700 mb-6">
+          Welcome Back 🌿
+        </h2>
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
         <form onSubmit={handleLogin} className="space-y-4">
           <input
             type="email"
             name="email"
             placeholder="Email"
+<<<<<<< HEAD
             className="input input-bordered w-full bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-green-400"
             onChange={(e) => setEmail(e.target.value)}
             required
           />
 
+=======
+            className="input input-bordered w-full focus:ring-2 focus:ring-green-400"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           <div className="relative">
             <input
               type={showPass ? "text" : "password"}
               name="password"
               placeholder="Password"
+<<<<<<< HEAD
               className="input input-bordered w-full bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-green-400"
+=======
+              className="input input-bordered w-full focus:ring-2 focus:ring-green-400"
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
               required
             />
             <span
@@ -74,14 +96,20 @@ export default function Login() {
               {showPass ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           <p
             onClick={handleReset}
             className="text-sm text-green-600 cursor-pointer hover:underline"
           >
             Forgot password?
           </p>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           <button className="btn bg-green-600 text-white w-full hover:bg-green-700">
             Login
           </button>
@@ -98,10 +126,14 @@ export default function Login() {
 
         <p className="text-center mt-4 text-sm text-gray-600">
           Don’t have an account?{" "}
+<<<<<<< HEAD
           <Link
             to="/register"
             className="text-green-700 font-semibold hover:underline"
           >
+=======
+          <Link to="/register" className="text-green-700 font-semibold hover:underline">
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
             Register
           </Link>
         </p>

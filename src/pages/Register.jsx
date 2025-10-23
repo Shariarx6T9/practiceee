@@ -7,7 +7,10 @@ import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 export default function Register() {
   const { createUser, googleLogin, updateUser } = useContext(AuthContext);
   const [showPass, setShowPass] = useState(false);
+<<<<<<< HEAD
   const [email, setEmail] = useState("");
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
@@ -15,7 +18,10 @@ export default function Register() {
     const form = e.target;
     const name = form.name.value;
     const email = form.email.value;
+<<<<<<< HEAD
     const photo = form.photo.value;
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     const password = form.password.value;
 
     // Password validation
@@ -28,7 +34,11 @@ export default function Register() {
 
     createUser(email, password)
       .then(() => {
+<<<<<<< HEAD
         updateUser(name, photo)
+=======
+        updateUser(name)
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           .then(() => {
             toast.success("Registration successful! 🌿");
             navigate("/");
@@ -48,8 +58,14 @@ export default function Register() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-green-100 to-green-50 px-4">
       <div className="card w-full max-w-md bg-white shadow-xl p-6 border border-green-100 rounded-2xl">
+=======
+    <div className="min-h-screen flex items-center justify-center bg-green-50">
+      <div className="card w-96 bg-base-100 shadow-xl p-6">
+        {/* Top heading to indicate registration page */}
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
         <h2 className="text-2xl font-semibold text-center mb-6 text-green-700">
           Create Your Account
         </h2>
@@ -59,13 +75,18 @@ export default function Register() {
             type="text"
             name="name"
             placeholder="Full Name"
+<<<<<<< HEAD
             className="input input-bordered w-full bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-green-400"
+=======
+            className="input input-bordered w-full"
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
             required
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
+<<<<<<< HEAD
             className="input input-bordered w-full bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-green-400"
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -75,6 +96,9 @@ export default function Register() {
             name="photo"
             placeholder="Photo URL"
             className="input input-bordered w-full bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-green-400"
+=======
+            className="input input-bordered w-full"
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
             required
           />
           <div className="relative">
@@ -82,7 +106,11 @@ export default function Register() {
               type={showPass ? "text" : "password"}
               name="password"
               placeholder="Password"
+<<<<<<< HEAD
               className="input input-bordered w-full bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-green-400"
+=======
+              className="input input-bordered w-full"
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
               required
             />
             <span
@@ -92,6 +120,7 @@ export default function Register() {
               {showPass ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
+<<<<<<< HEAD
 
           <button className="btn bg-green-600 text-white w-full mt-3 hover:bg-green-700">
             Register
@@ -110,6 +139,31 @@ export default function Register() {
         <p className="text-center mt-3 text-sm text-gray-600">
           Already have an account?{" "}
           <Link to="/login" className="text-green-700 font-semibold hover:underline">
+=======
+        </form>
+
+        {/* Google login button */}
+        <div className="mt-3">
+          <button
+            onClick={handleGoogle}
+            className="btn btn-outline w-full flex items-center justify-center gap-2"
+          >
+            <FaGoogle /> Continue with Google
+          </button>
+        </div>
+
+        {/* Main register button moved below */}
+        <button
+          onClick={(e) => handleRegister(e)}
+          className="btn bg-green-600 text-white w-full mt-3"
+        >
+          Register
+        </button>
+
+        <p className="text-center mt-3 text-sm">
+          Already have an account?{" "}
+          <Link to="/login" className="text-green-600 font-semibold">
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
             Login
           </Link>
         </p>

@@ -8,7 +8,11 @@
     "availableStock": 10,
     "careLevel": "Easy",
     "description": "A hardy plant that purifies indoor air and thrives in low light. Perfect for beginners and busy people.",
+<<<<<<< HEAD
     "image": "assets/snake plant.png",
+=======
+    "image": "/snake plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -20,7 +24,11 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Known for its white flowers and air-purifying qualities. Loves shade and consistent moisture.",
+<<<<<<< HEAD
     "image": "assets/peace lily.png",
+=======
+    "image": "/peace lily.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Leafy Haven"
   },
   {
@@ -32,7 +40,11 @@
     "availableStock": 8,
     "careLevel": "Easy",
     "description": "One of the most adaptable indoor plants, great for hanging pots and improving indoor air quality.",
+<<<<<<< HEAD
     "image": "assets/spider plant.png",
+=======
+    "image": "/spider plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Bloom & Grow Co."
   },
   {
@@ -44,7 +56,11 @@
     "availableStock": 6,
     "careLevel": "Medium",
     "description": "A lush, tropical plant that adds elegance to your living room or office space. Prefers bright indirect light.",
+<<<<<<< HEAD
     "image": "assets/areca palm.png",
+=======
+    "image": "/areca palm.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Evergreen Planet"
   },
   {
@@ -56,7 +72,11 @@
     "availableStock": 9,
     "careLevel": "Easy",
     "description": "A healing succulent that requires minimal watering and bright light. Great for both decor and skincare.",
+<<<<<<< HEAD
     "image": "assets/aloe vera.png",
+=======
+    "image": "/aloe vera.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -68,7 +88,11 @@
     "availableStock": 15,
     "careLevel": "Very Easy",
     "description": "Thrives in low-light conditions and requires little water. A perfect low-maintenance indoor plant.",
+<<<<<<< HEAD
     "image": "assets/zz plant.png",
+=======
+    "image": "/zz plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Nature's Touch"
   },
   {
@@ -80,7 +104,11 @@
     "availableStock": 5,
     "careLevel": "Medium",
     "description": "A trendy indoor tree with large, glossy leaves. Prefers bright indirect light and occasional watering.",
+<<<<<<< HEAD
     "image": "assets/fiddle leaf fig.png",
+=======
+    "image": "/fiddle leaf fig.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -92,7 +120,11 @@
     "availableStock": 20,
     "careLevel": "Easy",
     "description": "A fragrant herb perfect for cooking. Requires sunlight and regular watering.",
+<<<<<<< HEAD
     "image": "assets/basil plant.png",
+=======
+    "image": "/basil plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Leafy Haven"
   },
   {
@@ -104,7 +136,11 @@
     "availableStock": 15,
     "careLevel": "Medium",
     "description": "A fragrant flowering plant that attracts pollinators. Loves full sun and well-drained soil.",
+<<<<<<< HEAD
     "image": "assets/lavender plant.png",
+=======
+    "image": "/lavender plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Nature's Touch"
   },
   {
@@ -116,7 +152,11 @@
     "availableStock": 3,
     "careLevel": "Advanced",
     "description": "A miniature Japanese maple tree, ideal for bonsai enthusiasts. Requires careful watering and pruning.",
+<<<<<<< HEAD
     "image": "assets/acer bonsai.png",
+=======
+    "image": "/acer bonsai.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Evergreen Planet"
   },
   {
@@ -128,7 +168,11 @@
     "availableStock": 18,
     "careLevel": "Easy",
     "description": "Bright orange and yellow flowers that are easy to grow. Perfect for outdoor gardens and pots.",
+<<<<<<< HEAD
     "image": "assets/marigold flower.png",
+=======
+    "image": "/marigold flower.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Bloom & Grow Co."
   },
   {
@@ -140,7 +184,11 @@
     "availableStock": 10,
     "careLevel": "Medium",
     "description": "A fragrant climber that blooms white flowers. Loves sunlight and regular watering.",
+<<<<<<< HEAD
     "image": "assets/jasmine plant.png",
+=======
+    "image": "/jasmine plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Leafy Haven"
   },
   {
@@ -152,7 +200,11 @@
     "availableStock": 25,
     "careLevel": "Easy",
     "description": "A refreshing herb for teas and cooking. Thrives in sunlight and moist soil.",
+<<<<<<< HEAD
     "image": "assets/mint plant.png",
+=======
+    "image": "/mint plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Nature's Touch"
   },
   {
@@ -164,7 +216,11 @@
     "availableStock": 22,
     "careLevel": "Easy",
     "description": "A leafy herb with culinary and medicinal uses. Prefers sunlight and frequent watering.",
+<<<<<<< HEAD
     "image": "assets/coriander plant.png",
+=======
+    "image": "/coriander plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -176,7 +232,11 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Classic and fragrant flowers. Requires sunlight, regular pruning, and care.",
+<<<<<<< HEAD
     "image": "assets/rose flower.png",
+=======
+    "image": "/rose flower.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Evergreen Planet"
   },
   {
@@ -188,7 +248,11 @@
     "availableStock": 14,
     "careLevel": "Medium",
     "description": "A popular spring flower with bright colors. Prefers sunny spots and well-drained soil.",
+<<<<<<< HEAD
     "image": "assets/tulip flower.png",
+=======
+    "image": "/tulip flower.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Bloom & Grow Co."
   },
   {
@@ -200,7 +264,11 @@
     "availableStock": 16,
     "careLevel": "Easy",
     "description": "Tall, cheerful flowers that thrive in sunlight. Easy to grow in gardens and pots.",
+<<<<<<< HEAD
     "image": "assets/sunflower flower.png",
+=======
+    "image": "/sunflower flower.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Leafy Haven"
   },
   {
@@ -212,7 +280,11 @@
     "availableStock": 5,
     "careLevel": "Advanced",
     "description": "Exotic flowering plant with delicate blooms. Requires bright indirect light and humidity.",
+<<<<<<< HEAD
     "image": "assets/orchid plant.png",
+=======
+    "image": "/orchid plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -224,7 +296,11 @@
     "availableStock": 9,
     "careLevel": "Medium",
     "description": "Elegant flowers with a variety of colors. Prefers sunlight and well-drained soil.",
+<<<<<<< HEAD
     "image": "assets/lily flower.png",
+=======
+    "image": "/lily flower.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Nature's Touch"
   },
   {
@@ -236,7 +312,11 @@
     "availableStock": 18,
     "careLevel": "Easy",
     "description": "Simple yet charming flowers that grow well in gardens. Needs sunlight and moderate watering.",
+<<<<<<< HEAD
     "image": "assets/daisy flower.png",
+=======
+    "image": "/daisy flower.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Evergreen Planet"
   },
   {
@@ -248,7 +328,11 @@
     "availableStock": 10,
     "careLevel": "Medium",
     "description": "Colorful foliage plant that folds leaves at night. Prefers indirect light and humidity.",
+<<<<<<< HEAD
     "image": "assets/maranta plant.png",
+=======
+    "image": "/maranta plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Leafy Haven"
   },
   {
@@ -260,7 +344,11 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Known for its striking leaves. Requires moderate light and regular watering.",
+<<<<<<< HEAD
     "image": "assets/calathea plant.png",
+=======
+    "image": "/calathea plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -272,7 +360,11 @@
     "availableStock": 15,
     "careLevel": "Easy",
     "description": "A symbol of good luck. Thrives in indirect sunlight and regular water.",
+<<<<<<< HEAD
     "image": "assets/money plant.png",
+=======
+    "image": "/money plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Nature's Touch"
   },
   {
@@ -284,7 +376,11 @@
     "availableStock": 8,
     "careLevel": "Medium",
     "description": "Large, glossy leaves that improve indoor air quality. Needs moderate sunlight.",
+<<<<<<< HEAD
     "image": "assets/Rubber plant.png",
+=======
+    "image": "/Rubber plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Evergreen Planet"
   },
   {
@@ -296,7 +392,11 @@
     "availableStock": 10,
     "careLevel": "Easy",
     "description": "Tall indoor plant that removes toxins from the air. Requires indirect sunlight.",
+<<<<<<< HEAD
     "image": "assets/dracaena plant.png",
+=======
+    "image": "/dracaena plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Bloom & Grow Co."
   },
   {
@@ -308,7 +408,11 @@
     "availableStock": 20,
     "careLevel": "Very Easy",
     "description": "Vigorous vine that thrives in low light. Perfect for hanging baskets and shelves.",
+<<<<<<< HEAD
     "image": "assets/pothos plant.png",
+=======
+    "image": "/pothos plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -320,7 +424,11 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "Tropical flowering plant with bright, large flowers. Needs sunlight and regular watering.",
+<<<<<<< HEAD
     "image": "assets/hibiscus flower.png",
+=======
+    "image": "/hibiscus flower.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Leafy Haven"
   },
   {
@@ -332,7 +440,11 @@
     "availableStock": 15,
     "careLevel": "Medium",
     "description": "Colorful indoor plant with unique leaves and flowers. Prefers shade and consistent watering.",
+<<<<<<< HEAD
     "image": "assets/begonia plant.png",
+=======
+    "image": "/begonia plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Nature's Touch"
   },
   {
@@ -344,7 +456,11 @@
     "availableStock": 7,
     "careLevel": "Medium",
     "description": "Popular indoor tree with glossy leaves. Requires bright indirect light and regular pruning.",
+<<<<<<< HEAD
     "image": "assets/ficus tree.png",
+=======
+    "image": "/ficus tree.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "Evergreen Planet"
   },
   {
@@ -356,7 +472,11 @@
     "availableStock": 25,
     "careLevel": "Very Easy",
     "description": "Low-maintenance succulent. Requires bright sunlight and minimal watering.",
+<<<<<<< HEAD
     "image": "assets/cactus plant.png",
+=======
+    "image": "/cactus plant.png",
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     "providerName": "UrbanGreen Studio"
   }
 ]

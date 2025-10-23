@@ -8,8 +8,11 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PrivateRoute from "./components/PrivateRoute";
 import ErrorPage from "./pages/ErrorPage";
+<<<<<<< HEAD
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
 import Loading from "./components/Loading";
 import SuccessPage from "./components/SuccessPage";
 import ExplorePlants from "./pages/ExplorePlants";
@@ -73,12 +76,15 @@ export default function App() {
             }
           />
 
+<<<<<<< HEAD
           {/* About Page (Public) */}
           <Route path="/about" element={<About />} />
 
           {/* Contact Page (Public) */}
           <Route path="/contact" element={<Contact />} />
 
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
           {/* Auth Pages */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

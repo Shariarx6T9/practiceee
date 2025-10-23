@@ -19,6 +19,7 @@ export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
+<<<<<<< HEAD
   // Create new user
   const createUser = (email, password) =>
     createUserWithEmailAndPassword(auth, email, password);
@@ -50,6 +51,23 @@ export default function AuthProvider({ children }) {
     );
 
   // Watch user state
+=======
+  const createUser = (email, password) =>
+    createUserWithEmailAndPassword(auth, email, password);
+
+  const signInUser = (email, password) =>
+    signInWithEmailAndPassword(auth, email, password);
+
+  const logOut = () => signOut(auth);
+
+  const googleLogin = () => signInWithPopup(auth, provider);
+
+  const resetPassword = (email) => sendPasswordResetEmail(auth, email);
+
+  const updateUser = (name, photo) =>
+    updateProfile(auth.currentUser, { displayName: name, photoURL: photo });
+
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);

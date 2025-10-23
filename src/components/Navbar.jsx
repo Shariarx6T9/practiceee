@@ -1,11 +1,17 @@
 import { Link, useNavigate } from "react-router-dom";
+<<<<<<< HEAD
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthProvider";
 import { FaBars, FaTimes } from "react-icons/fa";
+=======
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthProvider";
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
 
 export default function Navbar() {
   const { user, logOut } = useContext(AuthContext);
   const navigate = useNavigate();
+<<<<<<< HEAD
   const [open, setOpen] = useState(false); // avatar dropdown
   const [mobileMenu, setMobileMenu] = useState(false); // hamburger
 
@@ -16,6 +22,8 @@ export default function Navbar() {
     setOpen(false);
     setMobileMenu(false);
   };
+=======
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
 
   return (
     <nav className="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-green-100">
@@ -28,6 +36,7 @@ export default function Navbar() {
           🌿 <span>GreenNest</span>
         </Link>
 
+<<<<<<< HEAD
         {/* Desktop Links */}
         <div className="hidden md:flex gap-6 font-medium text-gray-700">
           <Link to="/" className="hover:text-green-700">
@@ -76,6 +85,33 @@ export default function Navbar() {
             </div>
           ) : (
             <div className="hidden md:flex gap-2">
+=======
+        {/* Links */}
+        <div className="hidden md:flex gap-6 font-medium text-gray-700">
+          <Link to="/" className="hover:text-green-700">Home</Link>
+          <Link to="/plants" className="hover:text-green-700">Plants</Link>
+          {user && <Link to="/profile" className="hover:text-green-700">Profile</Link>}
+        </div>
+
+        {/* Auth Section */}
+        <div className="flex items-center gap-3">
+          {user ? (
+            <div className="flex items-center gap-3">
+              <img
+                src={user.photoURL || "https://i.ibb.co/2sYZf9M/user.png"}
+                alt="user"
+                className="w-9 h-9 rounded-full border-2 border-green-400 object-cover"
+              />
+              <button
+                onClick={logOut}
+                className="text-red-600 text-sm hover:underline"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <div className="flex gap-2">
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
               <button
                 onClick={() => navigate("/login")}
                 className="px-4 py-1 border border-green-600 text-green-600 rounded-md hover:bg-green-600 hover:text-white transition"
@@ -90,6 +126,7 @@ export default function Navbar() {
               </button>
             </div>
           )}
+<<<<<<< HEAD
 
           {/* Mobile Hamburger */}
           <div className="md:hidden ml-2">
@@ -162,6 +199,10 @@ export default function Navbar() {
           </div>
         </div>
       )}
+=======
+        </div>
+      </div>
+>>>>>>> 47f14dfab9ab515f587aa9c6197cb173fef1ba87
     </nav>
   );
 }
